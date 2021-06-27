@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31205.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OHMS", "OHMS\OHMS.csproj", "{44FD5DC7-2817-4855-B331-A7F3F11CAE10}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{44FD5DC7-2817-4855-B331-A7F3F11CAE10}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44FD5DC7-2817-4855-B331-A7F3F11CAE10}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44FD5DC7-2817-4855-B331-A7F3F11CAE10}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44FD5DC7-2817-4855-B331-A7F3F11CAE10}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {ABFC2D68-03CA-4F3D-8E79-E97BDA5080B3}
+	EndGlobalSection
+EndGlobal
