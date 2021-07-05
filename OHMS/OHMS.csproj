@@ -96,6 +96,18 @@
     <Compile Include="user_control\Expense_control.Designer.cs">
       <DependentUpon>Expense_control.cs</DependentUpon>
     </Compile>
+    <Compile Include="user_control\MarkStaffAttendanceControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="user_control\MarkStaffAttendanceControl.Designer.cs">
+      <DependentUpon>MarkStaffAttendanceControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="user_control\UserControlAddStaff.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="user_control\UserControlAddStaff.Designer.cs">
+      <DependentUpon>UserControlAddStaff.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Add_Expense.resx">
       <DependentUpon>Add_Expense.cs</DependentUpon>
     </EmbeddedResource>
@@ -129,6 +141,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="user_control\Expense_control.resx">
       <DependentUpon>Expense_control.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="user_control\MarkStaffAttendanceControl.resx">
+      <DependentUpon>MarkStaffAttendanceControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="user_control\UserControlAddStaff.resx">
+      <DependentUpon>UserControlAddStaff.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
