@@ -51,15 +51,18 @@ namespace OHMS.user_control
             // labelEmployeeName
             // 
             this.labelEmployeeName.AutoSize = true;
-            this.labelEmployeeName.Location = new System.Drawing.Point(70, 76);
+            this.labelEmployeeName.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelEmployeeName.ForeColor = System.Drawing.Color.White;
+            this.labelEmployeeName.Location = new System.Drawing.Point(419, 94);
             this.labelEmployeeName.Name = "labelEmployeeName";
-            this.labelEmployeeName.Size = new System.Drawing.Size(84, 13);
+            this.labelEmployeeName.Size = new System.Drawing.Size(129, 20);
             this.labelEmployeeName.TabIndex = 3;
             this.labelEmployeeName.Text = "Employee Name";
             // 
             // textBoxEmployeeName
             // 
-            this.textBoxEmployeeName.Location = new System.Drawing.Point(229, 76);
+            this.textBoxEmployeeName.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxEmployeeName.Location = new System.Drawing.Point(650, 94);
             this.textBoxEmployeeName.MaxLength = 200;
             this.textBoxEmployeeName.Multiline = true;
             this.textBoxEmployeeName.Name = "textBoxEmployeeName";
@@ -69,93 +72,110 @@ namespace OHMS.user_control
             // 
             // TextBoxEmployeeID
             // 
-            this.TextBoxEmployeeID.Location = new System.Drawing.Point(229, 29);
+            this.TextBoxEmployeeID.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TextBoxEmployeeID.Location = new System.Drawing.Point(650, 54);
             this.TextBoxEmployeeID.Mask = "ID00000";
             this.TextBoxEmployeeID.Name = "TextBoxEmployeeID";
-            this.TextBoxEmployeeID.Size = new System.Drawing.Size(53, 20);
+            this.TextBoxEmployeeID.Size = new System.Drawing.Size(100, 26);
             this.TextBoxEmployeeID.TabIndex = 2;
             // 
             // labelEmployeeID
             // 
             this.labelEmployeeID.AutoSize = true;
-            this.labelEmployeeID.Location = new System.Drawing.Point(73, 32);
+            this.labelEmployeeID.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelEmployeeID.ForeColor = System.Drawing.Color.White;
+            this.labelEmployeeID.Location = new System.Drawing.Point(419, 55);
             this.labelEmployeeID.Name = "labelEmployeeID";
-            this.labelEmployeeID.Size = new System.Drawing.Size(67, 13);
+            this.labelEmployeeID.Size = new System.Drawing.Size(101, 20);
             this.labelEmployeeID.TabIndex = 1;
             this.labelEmployeeID.Text = "Employee ID";
             // 
             // labelPrefferedName
             // 
             this.labelPrefferedName.AutoSize = true;
-            this.labelPrefferedName.Location = new System.Drawing.Point(70, 179);
+            this.labelPrefferedName.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPrefferedName.ForeColor = System.Drawing.Color.White;
+            this.labelPrefferedName.Location = new System.Drawing.Point(419, 201);
             this.labelPrefferedName.Name = "labelPrefferedName";
-            this.labelPrefferedName.Size = new System.Drawing.Size(81, 13);
+            this.labelPrefferedName.Size = new System.Drawing.Size(126, 20);
             this.labelPrefferedName.TabIndex = 7;
             this.labelPrefferedName.Text = "Preffered Name";
             // 
             // labelNIC
             // 
             this.labelNIC.AutoSize = true;
-            this.labelNIC.Location = new System.Drawing.Point(70, 141);
+            this.labelNIC.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelNIC.ForeColor = System.Drawing.Color.White;
+            this.labelNIC.Location = new System.Drawing.Point(419, 159);
             this.labelNIC.Name = "labelNIC";
-            this.labelNIC.Size = new System.Drawing.Size(65, 13);
+            this.labelNIC.Size = new System.Drawing.Size(99, 20);
             this.labelNIC.TabIndex = 5;
             this.labelNIC.Text = "NIC Number";
             // 
             // labelAddress
             // 
             this.labelAddress.AutoSize = true;
-            this.labelAddress.Location = new System.Drawing.Point(73, 224);
+            this.labelAddress.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelAddress.ForeColor = System.Drawing.Color.White;
+            this.labelAddress.Location = new System.Drawing.Point(422, 242);
             this.labelAddress.Name = "labelAddress";
-            this.labelAddress.Size = new System.Drawing.Size(45, 13);
+            this.labelAddress.Size = new System.Drawing.Size(67, 20);
             this.labelAddress.TabIndex = 9;
             this.labelAddress.Text = "Address";
             // 
             // labelContact
             // 
             this.labelContact.AutoSize = true;
-            this.labelContact.Location = new System.Drawing.Point(74, 269);
+            this.labelContact.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelContact.ForeColor = System.Drawing.Color.White;
+            this.labelContact.Location = new System.Drawing.Point(423, 287);
             this.labelContact.Name = "labelContact";
-            this.labelContact.Size = new System.Drawing.Size(44, 13);
+            this.labelContact.Size = new System.Drawing.Size(70, 20);
             this.labelContact.TabIndex = 11;
             this.labelContact.Text = "Contact";
             // 
             // labelDOB
             // 
             this.labelDOB.AutoSize = true;
-            this.labelDOB.Location = new System.Drawing.Point(74, 318);
+            this.labelDOB.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelDOB.ForeColor = System.Drawing.Color.White;
+            this.labelDOB.Location = new System.Drawing.Point(423, 336);
             this.labelDOB.Name = "labelDOB";
-            this.labelDOB.Size = new System.Drawing.Size(66, 13);
+            this.labelDOB.Size = new System.Drawing.Size(99, 20);
             this.labelDOB.TabIndex = 13;
             this.labelDOB.Text = "Date of Birth";
             // 
             // maskedTextBox2
             // 
-            this.maskedTextBox2.Location = new System.Drawing.Point(229, 141);
+            this.maskedTextBox2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.maskedTextBox2.Location = new System.Drawing.Point(650, 159);
             this.maskedTextBox2.Mask = "999999999CCC";
             this.maskedTextBox2.Name = "maskedTextBox2";
-            this.maskedTextBox2.Size = new System.Drawing.Size(78, 20);
+            this.maskedTextBox2.Size = new System.Drawing.Size(100, 26);
             this.maskedTextBox2.TabIndex = 6;
             // 
             // textBoxPrefferedName
             // 
-            this.textBoxPrefferedName.Location = new System.Drawing.Point(229, 176);
+            this.textBoxPrefferedName.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxPrefferedName.Location = new System.Drawing.Point(650, 201);
             this.textBoxPrefferedName.MaxLength = 15;
             this.textBoxPrefferedName.Name = "textBoxPrefferedName";
-            this.textBoxPrefferedName.Size = new System.Drawing.Size(100, 20);
+            this.textBoxPrefferedName.Size = new System.Drawing.Size(100, 26);
             this.textBoxPrefferedName.TabIndex = 8;
             // 
             // TextBoxContact
             // 
-            this.TextBoxContact.Location = new System.Drawing.Point(229, 269);
+            this.TextBoxContact.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TextBoxContact.Location = new System.Drawing.Point(650, 284);
             this.TextBoxContact.Mask = "00000000";
             this.TextBoxContact.Name = "TextBoxContact";
-            this.TextBoxContact.Size = new System.Drawing.Size(53, 20);
+            this.TextBoxContact.Size = new System.Drawing.Size(100, 26);
             this.TextBoxContact.TabIndex = 12;
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(229, 217);
+            this.textBox3.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox3.Location = new System.Drawing.Point(650, 242);
             this.textBox3.MaxLength = 250;
             this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
@@ -165,44 +185,57 @@ namespace OHMS.user_control
             // checkBoxMartialStatus
             // 
             this.checkBoxMartialStatus.AutoSize = true;
-            this.checkBoxMartialStatus.Location = new System.Drawing.Point(76, 357);
+            this.checkBoxMartialStatus.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxMartialStatus.ForeColor = System.Drawing.Color.White;
+            this.checkBoxMartialStatus.Location = new System.Drawing.Point(650, 380);
             this.checkBoxMartialStatus.Name = "checkBoxMartialStatus";
-            this.checkBoxMartialStatus.Size = new System.Drawing.Size(61, 17);
+            this.checkBoxMartialStatus.Size = new System.Drawing.Size(86, 24);
             this.checkBoxMartialStatus.TabIndex = 15;
             this.checkBoxMartialStatus.Text = "Married";
             this.checkBoxMartialStatus.UseVisualStyleBackColor = true;
             // 
             // buttonAdd
             // 
-            this.buttonAdd.Location = new System.Drawing.Point(77, 412);
+            this.buttonAdd.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.buttonAdd.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
+            this.buttonAdd.FlatAppearance.BorderSize = 20;
+            this.buttonAdd.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonAdd.ForeColor = System.Drawing.Color.White;
+            this.buttonAdd.Location = new System.Drawing.Point(426, 430);
             this.buttonAdd.Name = "buttonAdd";
             this.buttonAdd.Size = new System.Drawing.Size(149, 50);
             this.buttonAdd.TabIndex = 16;
             this.buttonAdd.Text = "Add";
-            this.buttonAdd.UseVisualStyleBackColor = true;
+            this.buttonAdd.UseVisualStyleBackColor = false;
             // 
             // dateTimePickerDOB
             // 
+            this.dateTimePickerDOB.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePickerDOB.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePickerDOB.Location = new System.Drawing.Point(229, 311);
+            this.dateTimePickerDOB.Location = new System.Drawing.Point(650, 331);
             this.dateTimePickerDOB.Name = "dateTimePickerDOB";
-            this.dateTimePickerDOB.Size = new System.Drawing.Size(100, 20);
+            this.dateTimePickerDOB.Size = new System.Drawing.Size(100, 26);
             this.dateTimePickerDOB.TabIndex = 14;
             // 
             // buttonUpdate
             // 
-            this.buttonUpdate.Location = new System.Drawing.Point(301, 412);
+            this.buttonUpdate.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.buttonUpdate.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.buttonUpdate.FlatAppearance.BorderSize = 5;
+            this.buttonUpdate.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonUpdate.ForeColor = System.Drawing.Color.White;
+            this.buttonUpdate.Location = new System.Drawing.Point(650, 430);
             this.buttonUpdate.Name = "buttonUpdate";
             this.buttonUpdate.Size = new System.Drawing.Size(149, 50);
             this.buttonUpdate.TabIndex = 16;
             this.buttonUpdate.Text = "Update";
-            this.buttonUpdate.UseVisualStyleBackColor = true;
+            this.buttonUpdate.UseVisualStyleBackColor = false;
             // 
             // UserControlAddStaff
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.BackColor = System.Drawing.Color.MidnightBlue;
             this.Controls.Add(this.dateTimePickerDOB);
             this.Controls.Add(this.buttonUpdate);
             this.Controls.Add(this.buttonAdd);
@@ -220,6 +253,7 @@ namespace OHMS.user_control
             this.Controls.Add(this.labelPrefferedName);
             this.Controls.Add(this.labelEmployeeID);
             this.Controls.Add(this.labelEmployeeName);
+            this.ForeColor = System.Drawing.Color.White;
             this.Name = "UserControlAddStaff";
             this.Size = new System.Drawing.Size(990, 554);
             this.ResumeLayout(false);
