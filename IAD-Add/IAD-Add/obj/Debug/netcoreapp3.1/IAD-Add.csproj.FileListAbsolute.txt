@@ -1,0 +1,17 @@
+C:\Users\M\source\repos\IAD-Add\IAD-Add\bin\Debug\netcoreapp3.1\IAD-Add.exe
+C:\Users\M\source\repos\IAD-Add\IAD-Add\bin\Debug\netcoreapp3.1\IAD-Add.deps.json
+C:\Users\M\source\repos\IAD-Add\IAD-Add\bin\Debug\netcoreapp3.1\IAD-Add.runtimeconfig.json
+C:\Users\M\source\repos\IAD-Add\IAD-Add\bin\Debug\netcoreapp3.1\IAD-Add.runtimeconfig.dev.json
+C:\Users\M\source\repos\IAD-Add\IAD-Add\bin\Debug\netcoreapp3.1\IAD-Add.dll
+C:\Users\M\source\repos\IAD-Add\IAD-Add\bin\Debug\netcoreapp3.1\IAD-Add.pdb
+C:\Users\M\source\repos\IAD-Add\IAD-Add\obj\Debug\netcoreapp3.1\IAD-Add.csprojAssemblyReference.cache
+C:\Users\M\source\repos\IAD-Add\IAD-Add\obj\Debug\netcoreapp3.1\IAD_Add.Form1.resources
+C:\Users\M\source\repos\IAD-Add\IAD-Add\obj\Debug\netcoreapp3.1\IAD-Add.csproj.GenerateResource.cache
+C:\Users\M\source\repos\IAD-Add\IAD-Add\obj\Debug\netcoreapp3.1\IAD-Add.AssemblyInfoInputs.cache
+C:\Users\M\source\repos\IAD-Add\IAD-Add\obj\Debug\netcoreapp3.1\IAD-Add.AssemblyInfo.cs
+C:\Users\M\source\repos\IAD-Add\IAD-Add\obj\Debug\netcoreapp3.1\IAD-Add.csproj.CoreCompileInputs.cache
+C:\Users\M\source\repos\IAD-Add\IAD-Add\obj\Debug\netcoreapp3.1\IAD-Add.dll
+C:\Users\M\source\repos\IAD-Add\IAD-Add\obj\Debug\netcoreapp3.1\IAD-Add.pdb
+C:\Users\M\source\repos\IAD-Add\IAD-Add\obj\Debug\netcoreapp3.1\IAD-Add.genruntimeconfig.cache
+C:\Users\M\source\repos\IAD-Add\IAD-Add\obj\Debug\netcoreapp3.1\IAD_Add.Form2.resources
+C:\Users\M\source\repos\IAD-Add\IAD-Add\obj\Debug\netcoreapp3.1\IAD_Add.Form3.resources
