@@ -33,10 +33,11 @@ namespace OHMS
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.textBoxBorder2 = new OHMS.user_control.TextBoxBorder();
+            this.textBoxBorder1 = new OHMS.user_control.TextBoxBorder();
+            this.customInstaller1 = new MySql.Data.MySqlClient.CustomInstaller();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -71,30 +72,15 @@ namespace OHMS
             this.label2.TabIndex = 1;
             this.label2.Text = "Password:";
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(31, 68);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(204, 20);
-            this.textBox1.TabIndex = 2;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(31, 147);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(204, 20);
-            this.textBox2.TabIndex = 2;
-            this.textBox2.UseSystemPasswordChar = true;
-            // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.Navy;
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(32)))), ((int)(((byte)(76)))));
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(44, 207);
+            this.button1.Location = new System.Drawing.Point(31, 207);
             this.button1.Name = "button1";
             this.button1.Padding = new System.Windows.Forms.Padding(2);
-            this.button1.Size = new System.Drawing.Size(178, 29);
+            this.button1.Size = new System.Drawing.Size(228, 29);
             this.button1.TabIndex = 3;
             this.button1.Text = "&LOGIN";
             this.button1.UseVisualStyleBackColor = false;
@@ -103,10 +89,10 @@ namespace OHMS
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.White;
+            this.groupBox1.Controls.Add(this.textBoxBorder2);
+            this.groupBox1.Controls.Add(this.textBoxBorder1);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.button1);
-            this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Controls.Add(this.textBox2);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.groupBox1.Location = new System.Drawing.Point(574, 151);
@@ -114,6 +100,24 @@ namespace OHMS
             this.groupBox1.Size = new System.Drawing.Size(274, 273);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // textBoxBorder2
+            // 
+            this.textBoxBorder2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxBorder2.Location = new System.Drawing.Point(31, 172);
+            this.textBoxBorder2.Name = "textBoxBorder2";
+            this.textBoxBorder2.Size = new System.Drawing.Size(228, 10);
+            this.textBoxBorder2.TabIndex = 6;
+            // 
+            // textBoxBorder1
+            // 
+            this.textBoxBorder1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxBorder1.Location = new System.Drawing.Point(31, 76);
+            this.textBoxBorder1.Name = "textBoxBorder1";
+            this.textBoxBorder1.Size = new System.Drawing.Size(228, 10);
+            this.textBoxBorder1.TabIndex = 5;
+            this.textBoxBorder1.TextChanged += new System.EventHandler(this.textBoxBorder1_TextChanged);
             // 
             // login
             // 
@@ -139,9 +143,10 @@ namespace OHMS
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.GroupBox groupBox1;
+        private user_control.TextBoxBorder textBoxBorder2;
+        private user_control.TextBoxBorder textBoxBorder1;
+        private MySql.Data.MySqlClient.CustomInstaller customInstaller1;
     }
 }

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace OHMS
 {
-    public partial class Form2 : Form
+    public partial class staff : Form
     {
-        public Form2()
+        public staff()
         {
             InitializeComponent();
         }
@@ -33,6 +33,11 @@ namespace OHMS
         }
 
         private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label15_Click(object sender, EventArgs e)
         {
 
         }

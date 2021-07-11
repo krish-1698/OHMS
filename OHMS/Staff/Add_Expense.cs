@@ -36,5 +36,10 @@ namespace OHMS
         {
 
         }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

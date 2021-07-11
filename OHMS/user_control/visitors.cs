@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace OHMS
+namespace OHMS.user_control
 {
-    public partial class CheckDonorForm : Form
+    public partial class visitors : UserControl
     {
-        public CheckDonorForm()
+        public visitors()
         {
             InitializeComponent();
         }
@@ -22,7 +22,7 @@ namespace OHMS
 
         }
 
-        private void textBox2_TextChanged(object sender, EventArgs e)
+        private void visitors_Load(object sender, EventArgs e)
         {
 
         }
@@ -32,20 +32,14 @@ namespace OHMS
 
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
         {
-
+            dateTimePicker1.CustomFormat = "dd/MM/yyyy hh:mm:ss";
         }
 
-        private void visitors1_Load(object sender, EventArgs e)
+        private void dateTimePicker2_ValueChanged(object sender, EventArgs e)
         {
-
-        }
-
-        private void CheckDonorForm_Load(object sender, EventArgs e)
-        {
-
-            
+            dateTimePicker1.CustomFormat = "dd/MM/yyyy hh:mm:ss";
         }
     }
 }

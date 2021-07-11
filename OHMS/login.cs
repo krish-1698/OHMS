@@ -22,12 +22,23 @@ namespace OHMS
 
         }
 
+       
         private void button1_Click(object sender, EventArgs e)
         {
-            using (Form1 f1= new Form1())
+            using (Admin_Dashboard f1= new Admin_Dashboard())
             {
                 f1.ShowDialog();
             }
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxBorder1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
