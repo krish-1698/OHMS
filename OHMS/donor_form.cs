@@ -30,6 +30,11 @@ namespace OHMS
 
         }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
         public donor_form(int id,string nic,string fname,string lname,int mobile,string email)
         {
             InitializeComponent();

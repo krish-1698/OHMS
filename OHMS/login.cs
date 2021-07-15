@@ -28,6 +28,7 @@ namespace OHMS
             using (Admin_Dashboard f1= new Admin_Dashboard())
             {
                 f1.ShowDialog();
+                
             }
         }
 
@@ -39,6 +40,11 @@ namespace OHMS
         private void textBoxBorder1_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

@@ -16,5 +16,30 @@ namespace OHMS.user_control
         {
             InitializeComponent();
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+            using (staff f1 = new staff())
+            {
+                f1.ShowDialog();
+
+            }
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            
+            using (staff f1 = new staff())
+            {
+                f1.ShowDialog();
+
+            }
+        }
     }
 }

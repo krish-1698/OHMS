@@ -113,6 +113,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="adoption_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adoption_form.Designer.cs">
+      <DependentUpon>adoption_form.cs</DependentUpon>
+    </Compile>
     <Compile Include="dbConnection.cs" />
     <Compile Include="donor_form.cs">
       <SubType>Form</SubType>
@@ -135,6 +141,18 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ohmsDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="orphan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="orphan.Designer.cs">
+      <DependentUpon>orphan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="orphan_dailyActivity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="orphan_dailyActivity.Designer.cs">
+      <DependentUpon>orphan_dailyActivity.cs</DependentUpon>
     </Compile>
     <Compile Include="SqlServerTypes\Loader.cs" />
     <Compile Include="Staff\Add_Expense.cs">
@@ -181,6 +199,18 @@
     <Compile Include="income_report.Designer.cs">
       <DependentUpon>income_report.cs</DependentUpon>
     </Compile>
+    <Compile Include="Staff\Staff_Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Staff\Staff_Dashboard.Designer.cs">
+      <DependentUpon>Staff_Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="user_control\adoption_control.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="user_control\adoption_control.Designer.cs">
+      <DependentUpon>adoption_control.cs</DependentUpon>
+    </Compile>
     <Compile Include="user_control\DailyActivities_control.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -204,6 +234,12 @@
     </Compile>
     <Compile Include="user_control\home_control.Designer.cs">
       <DependentUpon>home_control.cs</DependentUpon>
+    </Compile>
+    <Compile Include="user_control\orphanActivity_control.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="user_control\orphanActivity_control.Designer.cs">
+      <DependentUpon>orphanActivity_control.cs</DependentUpon>
     </Compile>
     <Compile Include="user_control\orphan_control.cs">
       <SubType>UserControl</SubType>
@@ -241,10 +277,31 @@
     <Compile Include="user_control\visitors.Designer.cs">
       <DependentUpon>visitors.cs</DependentUpon>
     </Compile>
+    <Compile Include="user_control\visitorActivity_control.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="user_control\visitorActivity_control.Designer.cs">
+      <DependentUpon>visitorActivity_control.cs</DependentUpon>
+    </Compile>
+    <Compile Include="visitorActivity_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="visitorActivity_form.Designer.cs">
+      <DependentUpon>visitorActivity_form.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="adoption_form.resx">
+      <DependentUpon>adoption_form.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="donor_form.resx">
       <DependentUpon>donor_form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ExpenseReport.rdlc" />
+    <EmbeddedResource Include="orphan.resx">
+      <DependentUpon>orphan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="orphan_dailyActivity.resx">
+      <DependentUpon>orphan_dailyActivity.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Staff\Add_Expense.resx">
       <DependentUpon>Add_Expense.cs</DependentUpon>
     </EmbeddedResource>
@@ -276,6 +333,15 @@
     <EmbeddedResource Include="income_report.resx">
       <DependentUpon>income_report.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Staff\Staff_Dashboard.resx">
+      <DependentUpon>Staff_Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="user_control\adoption_control.resx">
+      <DependentUpon>adoption_control.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="user_control\DailyActivities_control.resx">
+      <DependentUpon>DailyActivities_control.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="user_control\donation_control.resx">
       <DependentUpon>donation_control.cs</DependentUpon>
     </EmbeddedResource>
@@ -284,6 +350,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="user_control\home_control.resx">
       <DependentUpon>home_control.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="user_control\orphanActivity_control.resx">
+      <DependentUpon>orphanActivity_control.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="user_control\orphan_control.resx">
+      <DependentUpon>orphan_control.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="user_control\report_control.resx">
+      <DependentUpon>report_control.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="user_control\staffAttendance_control.resx">
       <DependentUpon>staffAttendance_control.cs</DependentUpon>
@@ -296,6 +371,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="user_control\visitors.resx">
       <DependentUpon>visitors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="user_control\visitorActivity_control.resx">
+      <DependentUpon>visitorActivity_control.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="visitorActivity_form.resx">
+      <DependentUpon>visitorActivity_form.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="expensedata.xsc">
       <DependentUpon>expensedata.xsd</DependentUpon>

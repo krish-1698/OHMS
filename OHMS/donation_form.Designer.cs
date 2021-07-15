@@ -31,23 +31,13 @@ namespace OHMS
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.textBoxBorder6 = new OHMS.user_control.TextBoxBorder();
-            this.textBoxBorder5 = new OHMS.user_control.TextBoxBorder();
             this.panel2 = new System.Windows.Forms.Panel();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.textBoxBorder11 = new OHMS.user_control.TextBoxBorder();
-            this.textBoxBorder10 = new OHMS.user_control.TextBoxBorder();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBoxBorder4 = new OHMS.user_control.TextBoxBorder();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label17 = new System.Windows.Forms.Label();
-            this.textBoxBorder9 = new OHMS.user_control.TextBoxBorder();
-            this.textBoxBorder3 = new OHMS.user_control.TextBoxBorder();
-            this.textBoxBorder2 = new OHMS.user_control.TextBoxBorder();
-            this.textBoxBorder7 = new OHMS.user_control.TextBoxBorder();
-            this.textBoxBorder1 = new OHMS.user_control.TextBoxBorder();
             this.label14 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -56,7 +46,6 @@ namespace OHMS
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBoxBorder8 = new OHMS.user_control.TextBoxBorder();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.radioButton3 = new System.Windows.Forms.RadioButton();
@@ -68,6 +57,17 @@ namespace OHMS
             this.label13 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.textBoxBorder6 = new OHMS.user_control.TextBoxBorder();
+            this.textBoxBorder5 = new OHMS.user_control.TextBoxBorder();
+            this.textBoxBorder11 = new OHMS.user_control.TextBoxBorder();
+            this.textBoxBorder10 = new OHMS.user_control.TextBoxBorder();
+            this.textBoxBorder4 = new OHMS.user_control.TextBoxBorder();
+            this.textBoxBorder9 = new OHMS.user_control.TextBoxBorder();
+            this.textBoxBorder3 = new OHMS.user_control.TextBoxBorder();
+            this.textBoxBorder2 = new OHMS.user_control.TextBoxBorder();
+            this.textBoxBorder7 = new OHMS.user_control.TextBoxBorder();
+            this.textBoxBorder1 = new OHMS.user_control.TextBoxBorder();
+            this.textBoxBorder8 = new OHMS.user_control.TextBoxBorder();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -118,22 +118,6 @@ namespace OHMS
             this.panel4.TabIndex = 28;
             this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
-            // textBoxBorder6
-            // 
-            this.textBoxBorder6.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxBorder6.Location = new System.Drawing.Point(481, 202);
-            this.textBoxBorder6.Name = "textBoxBorder6";
-            this.textBoxBorder6.Size = new System.Drawing.Size(135, 20);
-            this.textBoxBorder6.TabIndex = 25;
-            // 
-            // textBoxBorder5
-            // 
-            this.textBoxBorder5.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxBorder5.Location = new System.Drawing.Point(479, 164);
-            this.textBoxBorder5.Name = "textBoxBorder5";
-            this.textBoxBorder5.Size = new System.Drawing.Size(135, 20);
-            this.textBoxBorder5.TabIndex = 25;
-            // 
             // panel2
             // 
             this.panel2.Controls.Add(this.richTextBox1);
@@ -154,24 +138,6 @@ namespace OHMS
             this.richTextBox1.Size = new System.Drawing.Size(117, 44);
             this.richTextBox1.TabIndex = 2;
             this.richTextBox1.Text = "";
-            // 
-            // textBoxBorder11
-            // 
-            this.textBoxBorder11.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxBorder11.Location = new System.Drawing.Point(115, 43);
-            this.textBoxBorder11.Name = "textBoxBorder11";
-            this.textBoxBorder11.Size = new System.Drawing.Size(120, 20);
-            this.textBoxBorder11.TabIndex = 25;
-            this.textBoxBorder11.TextChanged += new System.EventHandler(this.textBoxBorder1_TextChanged_1);
-            // 
-            // textBoxBorder10
-            // 
-            this.textBoxBorder10.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxBorder10.Location = new System.Drawing.Point(115, 14);
-            this.textBoxBorder10.Name = "textBoxBorder10";
-            this.textBoxBorder10.Size = new System.Drawing.Size(120, 20);
-            this.textBoxBorder10.TabIndex = 25;
-            this.textBoxBorder10.TextChanged += new System.EventHandler(this.textBoxBorder1_TextChanged_1);
             // 
             // label9
             // 
@@ -203,14 +169,6 @@ namespace OHMS
             this.label7.TabIndex = 0;
             this.label7.Text = "Amount";
             // 
-            // textBoxBorder4
-            // 
-            this.textBoxBorder4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxBorder4.Location = new System.Drawing.Point(479, 125);
-            this.textBoxBorder4.Name = "textBoxBorder4";
-            this.textBoxBorder4.Size = new System.Drawing.Size(135, 20);
-            this.textBoxBorder4.TabIndex = 25;
-            // 
             // panel5
             // 
             this.panel5.Controls.Add(this.label17);
@@ -229,49 +187,6 @@ namespace OHMS
             this.label17.Size = new System.Drawing.Size(59, 16);
             this.label17.TabIndex = 0;
             this.label17.Text = "Amount";
-            // 
-            // textBoxBorder9
-            // 
-            this.textBoxBorder9.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxBorder9.Location = new System.Drawing.Point(95, 18);
-            this.textBoxBorder9.Name = "textBoxBorder9";
-            this.textBoxBorder9.Size = new System.Drawing.Size(120, 20);
-            this.textBoxBorder9.TabIndex = 25;
-            this.textBoxBorder9.TextChanged += new System.EventHandler(this.textBoxBorder1_TextChanged_1);
-            // 
-            // textBoxBorder3
-            // 
-            this.textBoxBorder3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxBorder3.Location = new System.Drawing.Point(481, 91);
-            this.textBoxBorder3.Name = "textBoxBorder3";
-            this.textBoxBorder3.Size = new System.Drawing.Size(135, 20);
-            this.textBoxBorder3.TabIndex = 25;
-            // 
-            // textBoxBorder2
-            // 
-            this.textBoxBorder2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxBorder2.Location = new System.Drawing.Point(479, 55);
-            this.textBoxBorder2.Name = "textBoxBorder2";
-            this.textBoxBorder2.Size = new System.Drawing.Size(135, 20);
-            this.textBoxBorder2.TabIndex = 25;
-            // 
-            // textBoxBorder7
-            // 
-            this.textBoxBorder7.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxBorder7.Location = new System.Drawing.Point(136, 23);
-            this.textBoxBorder7.Name = "textBoxBorder7";
-            this.textBoxBorder7.Size = new System.Drawing.Size(156, 20);
-            this.textBoxBorder7.TabIndex = 25;
-            this.textBoxBorder7.TextChanged += new System.EventHandler(this.textBoxBorder1_TextChanged_1);
-            // 
-            // textBoxBorder1
-            // 
-            this.textBoxBorder1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxBorder1.Location = new System.Drawing.Point(481, 22);
-            this.textBoxBorder1.Name = "textBoxBorder1";
-            this.textBoxBorder1.Size = new System.Drawing.Size(135, 20);
-            this.textBoxBorder1.TabIndex = 25;
-            this.textBoxBorder1.TextChanged += new System.EventHandler(this.textBoxBorder1_TextChanged_1);
             // 
             // label14
             // 
@@ -351,15 +266,6 @@ namespace OHMS
             this.label10.TabIndex = 0;
             this.label10.Text = "Type";
             // 
-            // textBoxBorder8
-            // 
-            this.textBoxBorder8.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxBorder8.Location = new System.Drawing.Point(106, 13);
-            this.textBoxBorder8.Name = "textBoxBorder8";
-            this.textBoxBorder8.Size = new System.Drawing.Size(120, 20);
-            this.textBoxBorder8.TabIndex = 25;
-            this.textBoxBorder8.TextChanged += new System.EventHandler(this.textBoxBorder1_TextChanged_1);
-            // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.radioButton1);
@@ -375,13 +281,14 @@ namespace OHMS
             // 
             this.radioButton1.AutoSize = true;
             this.radioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton1.Location = new System.Drawing.Point(176, 12);
+            this.radioButton1.Location = new System.Drawing.Point(176, 10);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(74, 19);
             this.radioButton1.TabIndex = 1;
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "Product";
             this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
             // radioButton3
             // 
@@ -394,6 +301,7 @@ namespace OHMS
             this.radioButton3.TabStop = true;
             this.radioButton3.Text = "Cheque";
             this.radioButton3.UseVisualStyleBackColor = true;
+            this.radioButton3.CheckedChanged += new System.EventHandler(this.radioButton3_CheckedChanged);
             // 
             // radioButton4
             // 
@@ -406,6 +314,7 @@ namespace OHMS
             this.radioButton4.TabStop = true;
             this.radioButton4.Text = "Cash";
             this.radioButton4.UseVisualStyleBackColor = true;
+            this.radioButton4.CheckedChanged += new System.EventHandler(this.radioButton4_CheckedChanged);
             // 
             // label6
             // 
@@ -423,7 +332,7 @@ namespace OHMS
             this.dateTimePicker1.Location = new System.Drawing.Point(136, 62);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(155, 20);
-            this.dateTimePicker1.TabIndex = 24;
+            this.dateTimePicker1.TabIndex = 3;
             this.dateTimePicker1.Value = new System.DateTime(2021, 6, 23, 0, 0, 0, 0);
             // 
             // label5
@@ -465,7 +374,7 @@ namespace OHMS
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 23);
             this.button3.TabIndex = 7;
-            this.button3.Text = "Save";
+            this.button3.Text = "S&ave";
             this.button3.UseVisualStyleBackColor = false;
             // 
             // button2
@@ -479,6 +388,102 @@ namespace OHMS
             this.button2.TabIndex = 7;
             this.button2.Text = "Close";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // textBoxBorder6
+            // 
+            this.textBoxBorder6.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxBorder6.Location = new System.Drawing.Point(481, 202);
+            this.textBoxBorder6.Name = "textBoxBorder6";
+            this.textBoxBorder6.Size = new System.Drawing.Size(135, 20);
+            this.textBoxBorder6.TabIndex = 25;
+            // 
+            // textBoxBorder5
+            // 
+            this.textBoxBorder5.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxBorder5.Location = new System.Drawing.Point(479, 164);
+            this.textBoxBorder5.Name = "textBoxBorder5";
+            this.textBoxBorder5.Size = new System.Drawing.Size(135, 20);
+            this.textBoxBorder5.TabIndex = 25;
+            // 
+            // textBoxBorder11
+            // 
+            this.textBoxBorder11.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxBorder11.Location = new System.Drawing.Point(115, 43);
+            this.textBoxBorder11.Name = "textBoxBorder11";
+            this.textBoxBorder11.Size = new System.Drawing.Size(120, 20);
+            this.textBoxBorder11.TabIndex = 25;
+            this.textBoxBorder11.TextChanged += new System.EventHandler(this.textBoxBorder1_TextChanged_1);
+            // 
+            // textBoxBorder10
+            // 
+            this.textBoxBorder10.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxBorder10.Location = new System.Drawing.Point(115, 14);
+            this.textBoxBorder10.Name = "textBoxBorder10";
+            this.textBoxBorder10.Size = new System.Drawing.Size(120, 20);
+            this.textBoxBorder10.TabIndex = 25;
+            this.textBoxBorder10.TextChanged += new System.EventHandler(this.textBoxBorder1_TextChanged_1);
+            // 
+            // textBoxBorder4
+            // 
+            this.textBoxBorder4.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxBorder4.Location = new System.Drawing.Point(479, 125);
+            this.textBoxBorder4.Name = "textBoxBorder4";
+            this.textBoxBorder4.Size = new System.Drawing.Size(135, 20);
+            this.textBoxBorder4.TabIndex = 25;
+            // 
+            // textBoxBorder9
+            // 
+            this.textBoxBorder9.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxBorder9.Location = new System.Drawing.Point(95, 18);
+            this.textBoxBorder9.Name = "textBoxBorder9";
+            this.textBoxBorder9.Size = new System.Drawing.Size(120, 20);
+            this.textBoxBorder9.TabIndex = 25;
+            this.textBoxBorder9.TextChanged += new System.EventHandler(this.textBoxBorder1_TextChanged_1);
+            // 
+            // textBoxBorder3
+            // 
+            this.textBoxBorder3.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxBorder3.Location = new System.Drawing.Point(481, 91);
+            this.textBoxBorder3.Name = "textBoxBorder3";
+            this.textBoxBorder3.Size = new System.Drawing.Size(135, 20);
+            this.textBoxBorder3.TabIndex = 25;
+            // 
+            // textBoxBorder2
+            // 
+            this.textBoxBorder2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxBorder2.Location = new System.Drawing.Point(479, 55);
+            this.textBoxBorder2.Name = "textBoxBorder2";
+            this.textBoxBorder2.Size = new System.Drawing.Size(135, 20);
+            this.textBoxBorder2.TabIndex = 4;
+            // 
+            // textBoxBorder7
+            // 
+            this.textBoxBorder7.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxBorder7.Location = new System.Drawing.Point(136, 23);
+            this.textBoxBorder7.Name = "textBoxBorder7";
+            this.textBoxBorder7.Size = new System.Drawing.Size(156, 20);
+            this.textBoxBorder7.TabIndex = 1;
+            this.textBoxBorder7.TextChanged += new System.EventHandler(this.textBoxBorder1_TextChanged_1);
+            // 
+            // textBoxBorder1
+            // 
+            this.textBoxBorder1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxBorder1.Location = new System.Drawing.Point(481, 22);
+            this.textBoxBorder1.Name = "textBoxBorder1";
+            this.textBoxBorder1.Size = new System.Drawing.Size(135, 20);
+            this.textBoxBorder1.TabIndex = 2;
+            this.textBoxBorder1.TextChanged += new System.EventHandler(this.textBoxBorder1_TextChanged_1);
+            this.textBoxBorder1.MouseHover += new System.EventHandler(this.textBoxBorder1_MouseHover);
+            // 
+            // textBoxBorder8
+            // 
+            this.textBoxBorder8.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxBorder8.Location = new System.Drawing.Point(106, 13);
+            this.textBoxBorder8.Name = "textBoxBorder8";
+            this.textBoxBorder8.Size = new System.Drawing.Size(120, 20);
+            this.textBoxBorder8.TabIndex = 25;
+            this.textBoxBorder8.TextChanged += new System.EventHandler(this.textBoxBorder1_TextChanged_1);
             // 
             // donation_form
             // 

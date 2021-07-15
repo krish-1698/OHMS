@@ -22,6 +22,10 @@ namespace OHMS
             panelWidth = pnl_left.Width;
             col = false;
             timer2.Start();
+            SidePanel.Height = button1.Height;
+            SidePanel.Top = button1.Top;
+
+
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -31,12 +35,21 @@ namespace OHMS
 
         private void button4_Click(object sender, EventArgs e)
         {
-
+            SidePanel.Height = button4.Height;
+            SidePanel.Top = button4.Top;
+            user_control.report_control report = new user_control.report_control();
+            addcontrols(report);
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
             lbldate.Text = DateTime.Now.ToString("ddd,dd MMM yyyy");
+            user_control.home_control home = new user_control.home_control();
+            panelControls.Controls.Clear();
+            panelControls.Controls.Add(home);
+            home.Dock = DockStyle.Fill;
+            home.BringToFront();
+
         }
 
 
@@ -44,8 +57,8 @@ namespace OHMS
         {
 
             panelControls.Controls.Clear();
-            uc.Dock=DockStyle.Fill;
             panelControls.Controls.Add(uc);
+            uc.Dock=DockStyle.Fill;
             uc.BringToFront();
 
         }
@@ -83,22 +96,33 @@ namespace OHMS
         {
 
         }
-
+       
         private void button1_Click(object sender, EventArgs e)
         {
-            (sender as Button).BackColor = Color.FromArgb(3, 92, 150);
-            user_control.donation_control dc = new user_control.donation_control();
-            addcontrols(dc);
+            //(sender as Button).BackColor = Color.FromArgb(100, 151, 178);
+            SidePanel.Height = button1.Height;
+            SidePanel.Top = button1.Top;
+            user_control.home_control home = new user_control.home_control();
+            panelControls.Controls.Clear();
+            panelControls.Controls.Add(home);
+            home.Dock = DockStyle.Fill;
+            home.BringToFront();
+
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
-            user_control.donation_control donor = new user_control.donation_control();
-            addcontrols(donor);
-        }
+            SidePanel.Height = button6.Height;
+            SidePanel.Top = button6.Top;
+            user_control.Expense_control exp = new user_control.Expense_control();
+            addcontrols(exp);
+           
+         }
 
         private void button2_Click(object sender, EventArgs e)
         {
+            SidePanel.Height = button2.Height;
+            SidePanel.Top = button2.Top;
             user_control.staff_control staff = new user_control.staff_control();
             addcontrols(staff);
         }
@@ -110,13 +134,19 @@ namespace OHMS
 
         private void button5_Click(object sender, EventArgs e)
         {
-            user_control.Expense_control ex = new user_control.Expense_control();
-            addcontrols(ex);
+            SidePanel.Height = button5.Height;
+            SidePanel.Top = button5.Top;
+            user_control.donation_control donation = new user_control.donation_control();
+            addcontrols(donation);
         }
 
         private void panelControls_Paint(object sender, PaintEventArgs e)
         {
-
+            user_control.home_control home = new user_control.home_control();
+            panelControls.Controls.Clear();
+            panelControls.Controls.Add(home);
+            home.Dock = DockStyle.Fill;
+            home.BringToFront();
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -160,7 +190,52 @@ namespace OHMS
 
         }
 
-        private void panelControls_Paint_1(object sender, PaintEventArgs e)
+       
+
+        private void panel1_Paint_2(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void SidePanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            SidePanel.Height = button7.Height;
+            SidePanel.Top = button7.Top;
+            user_control.staffAttendance_control attendance = new user_control.staffAttendance_control();
+            addcontrols(attendance);
+        }
+    
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            SidePanel.Height = button3.Height;
+            SidePanel.Top = button3.Top;
+            user_control.orphan_control orphan = new user_control.orphan_control();
+            addcontrols(orphan);
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+           DialogResult result= MessageBox.Show("Are you sure you want to Log Out ?", "Message", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (result == DialogResult.Yes)
+            {
+                login l1 = new login();
+                l1.Show();
+                this.Close();
+            }
+        }
+
+        private void button10_Click(object sender, EventArgs e)
         {
 
         }

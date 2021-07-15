@@ -41,5 +41,21 @@ namespace OHMS
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog open = new OpenFileDialog();
+            open.Filter = "Image Files (*.jpg;*.jpeg;.*.gif;)|*.jpg;*.jpeg;.*.gif";
+            if (open.ShowDialog() == DialogResult.OK)
+            {
+                photo_pictureBox.Image = new Bitmap(open.FileName);
+                //pictureBox1.Image = new Bitmap(open.FileName);
+            }
+        }
     }
 }

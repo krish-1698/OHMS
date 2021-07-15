@@ -38,49 +38,52 @@ namespace OHMS
             this.textBoxBorder2 = new OHMS.user_control.TextBoxBorder();
             this.textBoxBorder1 = new OHMS.user_control.TextBoxBorder();
             this.customInstaller1 = new MySql.Data.MySqlClient.CustomInstaller();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackColor = System.Drawing.Color.White;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(318, 169);
+            this.pictureBox1.Location = new System.Drawing.Point(362, 234);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(228, 218);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.Size = new System.Drawing.Size(297, 343);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(27, 31);
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(29, 38);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(96, 23);
+            this.label1.Size = new System.Drawing.Size(140, 30);
             this.label1.TabIndex = 1;
             this.label1.Text = "Username:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(27, 109);
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(29, 150);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(91, 23);
+            this.label2.Size = new System.Drawing.Size(129, 30);
             this.label2.TabIndex = 1;
             this.label2.Text = "Password:";
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(32)))), ((int)(((byte)(76)))));
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(100)))), ((int)(((byte)(168)))));
+            this.button1.Font = new System.Drawing.Font("Century", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(31, 207);
+            this.button1.Location = new System.Drawing.Point(33, 277);
             this.button1.Name = "button1";
             this.button1.Padding = new System.Windows.Forms.Padding(2);
-            this.button1.Size = new System.Drawing.Size(228, 29);
+            this.button1.Size = new System.Drawing.Size(259, 34);
             this.button1.TabIndex = 3;
             this.button1.Text = "&LOGIN";
             this.button1.UseVisualStyleBackColor = false;
@@ -95,9 +98,9 @@ namespace OHMS
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.groupBox1.Location = new System.Drawing.Point(574, 151);
+            this.groupBox1.Location = new System.Drawing.Point(674, 225);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(274, 273);
+            this.groupBox1.Size = new System.Drawing.Size(318, 352);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
@@ -105,30 +108,43 @@ namespace OHMS
             // textBoxBorder2
             // 
             this.textBoxBorder2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxBorder2.Location = new System.Drawing.Point(31, 172);
+            this.textBoxBorder2.Location = new System.Drawing.Point(34, 202);
             this.textBoxBorder2.Name = "textBoxBorder2";
-            this.textBoxBorder2.Size = new System.Drawing.Size(228, 10);
-            this.textBoxBorder2.TabIndex = 6;
+            this.textBoxBorder2.Size = new System.Drawing.Size(259, 20);
+            this.textBoxBorder2.TabIndex = 2;
             // 
             // textBoxBorder1
             // 
             this.textBoxBorder1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxBorder1.Location = new System.Drawing.Point(31, 76);
+            this.textBoxBorder1.Location = new System.Drawing.Point(33, 93);
             this.textBoxBorder1.Name = "textBoxBorder1";
-            this.textBoxBorder1.Size = new System.Drawing.Size(228, 10);
-            this.textBoxBorder1.TabIndex = 5;
+            this.textBoxBorder1.Size = new System.Drawing.Size(259, 20);
+            this.textBoxBorder1.TabIndex = 1;
             this.textBoxBorder1.TextChanged += new System.EventHandler(this.textBoxBorder1_TextChanged);
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.White;
+            this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button2.Location = new System.Drawing.Point(1319, 6);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(44, 44);
+            this.button2.TabIndex = 5;
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // login
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1200, 720);
+            this.ClientSize = new System.Drawing.Size(1386, 748);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "login";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "login";
             this.Load += new System.EventHandler(this.login_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -148,5 +164,6 @@ namespace OHMS
         private user_control.TextBoxBorder textBoxBorder2;
         private user_control.TextBoxBorder textBoxBorder1;
         private MySql.Data.MySqlClient.CustomInstaller customInstaller1;
+        private System.Windows.Forms.Button button2;
     }
 }

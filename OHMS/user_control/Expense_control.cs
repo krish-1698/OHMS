@@ -74,9 +74,9 @@ namespace OHMS.user_control
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            textBox1.Text = dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString();
-          textBox2.Text = dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
-            textBox3.Text = dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
+          //  textBox1.Text = dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString();
+          //textBox2.Text = dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
+            //textBox3.Text = dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
             
         }
 
@@ -137,6 +137,11 @@ namespace OHMS.user_control
         }
 
         private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint_1(object sender, PaintEventArgs e)
         {
 
         }

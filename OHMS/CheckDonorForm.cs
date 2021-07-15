@@ -29,7 +29,12 @@ namespace OHMS
 
         private void button1_Click(object sender, EventArgs e)
         {
+            using (donation_form f1 = new donation_form())
+            {
+                f1.ShowDialog();
 
+            }
+            this.Close();
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -46,6 +51,11 @@ namespace OHMS
         {
 
             
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

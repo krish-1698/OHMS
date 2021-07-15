@@ -52,13 +52,13 @@ namespace OHMS.user_control
             
             DataGridViewButtonColumn Editlink = new DataGridViewButtonColumn();
             Editlink.UseColumnTextForButtonValue = true;
-            Editlink.HeaderText = "update";
+            Editlink.HeaderText = "Update";
             Editlink.Text = "Update";
             dataGridView2.Columns.Add(Editlink);
 
-            DataGridViewLinkColumn Deletelink = new DataGridViewLinkColumn();
-            Deletelink.UseColumnTextForLinkValue = true;
-            Deletelink.HeaderText = "delete";
+            DataGridViewButtonColumn Deletelink = new DataGridViewButtonColumn();
+            Deletelink.UseColumnTextForButtonValue = true;
+            Deletelink.HeaderText = "Delete";
             Deletelink.Text = "Delete";
             dataGridView2.Columns.Add(Deletelink);
             con.Close();
@@ -106,7 +106,7 @@ namespace OHMS.user_control
 
         private void dataGridView2_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (dataGridView2.Columns[e.ColumnIndex].HeaderText == "delete")
+            if (dataGridView2.Columns[e.ColumnIndex].HeaderText == "Delete")
             {
                 DialogResult answer = MessageBox.Show("Are you sure you want to Delete", "Message", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (answer == DialogResult.Yes)
@@ -131,7 +131,7 @@ namespace OHMS.user_control
 
                 }
             }
-            if (dataGridView2.Columns[e.ColumnIndex].HeaderText == "update")
+            if (dataGridView2.Columns[e.ColumnIndex].HeaderText == "Update")
             {
                 int id, mobile;
                 string fname, lname, nic, email;
@@ -149,6 +149,15 @@ namespace OHMS.user_control
         private void panel2_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            using (CheckDonorForm f1 = new CheckDonorForm())
+            {
+                f1.ShowDialog();
+
+            }
         }
     }
 }

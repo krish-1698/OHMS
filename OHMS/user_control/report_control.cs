@@ -16,5 +16,14 @@ namespace OHMS.user_control
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            using (income_report f1 = new income_report())
+            {
+                f1.ShowDialog();
+
+            }
+        }
     }
 }
