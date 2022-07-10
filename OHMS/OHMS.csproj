@@ -242,6 +242,7 @@
     <Compile Include="user_control\Expense_control.Designer.cs">
       <DependentUpon>Expense_control.cs</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="user_control\home_control.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -320,6 +321,21 @@
       <DependentUpon>orphan_dailyActivity.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Staff\Add_Expense.resx">
+=======
+    <Compile Include="user_control\MarkStaffAttendanceControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="user_control\MarkStaffAttendanceControl.Designer.cs">
+      <DependentUpon>MarkStaffAttendanceControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="user_control\UserControlAddStaff.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="user_control\UserControlAddStaff.Designer.cs">
+      <DependentUpon>UserControlAddStaff.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Add_Expense.resx">
+>>>>>>> 33f074bed50a797a901e10825bad0aab9e055718
       <DependentUpon>Add_Expense.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CheckDonorForm.resx">
@@ -368,6 +384,7 @@
     <EmbeddedResource Include="user_control\Expense_control.resx">
       <DependentUpon>Expense_control.cs</DependentUpon>
     </EmbeddedResource>
+<<<<<<< HEAD
     <EmbeddedResource Include="user_control\home_control.resx">
       <DependentUpon>home_control.cs</DependentUpon>
     </EmbeddedResource>
@@ -421,6 +438,14 @@
       <DependentUpon>ohmsDataSet.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
+=======
+    <EmbeddedResource Include="user_control\MarkStaffAttendanceControl.resx">
+      <DependentUpon>MarkStaffAttendanceControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="user_control\UserControlAddStaff.resx">
+      <DependentUpon>UserControlAddStaff.cs</DependentUpon>
+    </EmbeddedResource>
+>>>>>>> 33f074bed50a797a901e10825bad0aab9e055718
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
