@@ -35,8 +35,8 @@ namespace OHMS
             this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textBoxBorder2 = new OHMS.user_control.TextBoxBorder();
-            this.textBoxBorder1 = new OHMS.user_control.TextBoxBorder();
+            this.txt_pasword = new OHMS.user_control.TextBoxBorder();
+            this.txt_username = new OHMS.user_control.TextBoxBorder();
             this.customInstaller1 = new MySql.Data.MySqlClient.CustomInstaller();
             this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -78,6 +78,7 @@ namespace OHMS
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(100)))), ((int)(((byte)(168)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Century", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Location = new System.Drawing.Point(33, 277);
@@ -92,8 +93,8 @@ namespace OHMS
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.White;
-            this.groupBox1.Controls.Add(this.textBoxBorder2);
-            this.groupBox1.Controls.Add(this.textBoxBorder1);
+            this.groupBox1.Controls.Add(this.txt_pasword);
+            this.groupBox1.Controls.Add(this.txt_username);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.label2);
@@ -105,31 +106,38 @@ namespace OHMS
             this.groupBox1.TabStop = false;
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // textBoxBorder2
+            // txt_pasword
             // 
-            this.textBoxBorder2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxBorder2.Location = new System.Drawing.Point(34, 202);
-            this.textBoxBorder2.Name = "textBoxBorder2";
-            this.textBoxBorder2.Size = new System.Drawing.Size(259, 20);
-            this.textBoxBorder2.TabIndex = 2;
+            this.txt_pasword.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_pasword.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_pasword.Location = new System.Drawing.Point(34, 202);
+            this.txt_pasword.Name = "txt_pasword";
+            this.txt_pasword.PasswordChar = '*';
+            this.txt_pasword.Size = new System.Drawing.Size(259, 22);
+            this.txt_pasword.TabIndex = 2;
+            this.txt_pasword.TextChanged += new System.EventHandler(this.textBoxBorder2_TextChanged);
+            this.txt_pasword.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxBorder2_KeyPress);
             // 
-            // textBoxBorder1
+            // txt_username
             // 
-            this.textBoxBorder1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxBorder1.Location = new System.Drawing.Point(33, 93);
-            this.textBoxBorder1.Name = "textBoxBorder1";
-            this.textBoxBorder1.Size = new System.Drawing.Size(259, 20);
-            this.textBoxBorder1.TabIndex = 1;
-            this.textBoxBorder1.TextChanged += new System.EventHandler(this.textBoxBorder1_TextChanged);
+            this.txt_username.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_username.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_username.Location = new System.Drawing.Point(33, 93);
+            this.txt_username.Name = "txt_username";
+            this.txt_username.Size = new System.Drawing.Size(259, 22);
+            this.txt_username.TabIndex = 1;
+            this.txt_username.TextChanged += new System.EventHandler(this.textBoxBorder1_TextChanged);
+            this.txt_username.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxBorder1_KeyDown);
             // 
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.White;
-            this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button2.Location = new System.Drawing.Point(1319, 6);
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
+            this.button2.Location = new System.Drawing.Point(1315, 2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(44, 44);
+            this.button2.Size = new System.Drawing.Size(56, 56);
             this.button2.TabIndex = 5;
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -161,8 +169,8 @@ namespace OHMS
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.GroupBox groupBox1;
-        private user_control.TextBoxBorder textBoxBorder2;
-        private user_control.TextBoxBorder textBoxBorder1;
+        private user_control.TextBoxBorder txt_pasword;
+        private user_control.TextBoxBorder txt_username;
         private MySql.Data.MySqlClient.CustomInstaller customInstaller1;
         private System.Windows.Forms.Button button2;
     }

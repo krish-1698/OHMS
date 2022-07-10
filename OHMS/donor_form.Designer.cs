@@ -32,18 +32,18 @@ namespace OHMS
             this.panel1 = new System.Windows.Forms.Panel();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.textBoxBorder6 = new OHMS.user_control.TextBoxBorder();
-            this.textBoxBorder5 = new OHMS.user_control.TextBoxBorder();
-            this.textBoxBorder4 = new OHMS.user_control.TextBoxBorder();
-            this.textBoxBorder3 = new OHMS.user_control.TextBoxBorder();
-            this.textBoxBorder2 = new OHMS.user_control.TextBoxBorder();
-            this.textBoxBorder1 = new OHMS.user_control.TextBoxBorder();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
+            this.txt_email = new OHMS.user_control.TextBoxBorder();
+            this.txt_contact = new OHMS.user_control.TextBoxBorder();
+            this.txt_nic = new OHMS.user_control.TextBoxBorder();
+            this.txt_lname = new OHMS.user_control.TextBoxBorder();
+            this.txt_fname = new OHMS.user_control.TextBoxBorder();
+            this.txt_donor_id = new OHMS.user_control.TextBoxBorder();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -52,12 +52,12 @@ namespace OHMS
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.button3);
             this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.textBoxBorder6);
-            this.panel1.Controls.Add(this.textBoxBorder5);
-            this.panel1.Controls.Add(this.textBoxBorder4);
-            this.panel1.Controls.Add(this.textBoxBorder3);
-            this.panel1.Controls.Add(this.textBoxBorder2);
-            this.panel1.Controls.Add(this.textBoxBorder1);
+            this.panel1.Controls.Add(this.txt_email);
+            this.panel1.Controls.Add(this.txt_contact);
+            this.panel1.Controls.Add(this.txt_nic);
+            this.panel1.Controls.Add(this.txt_lname);
+            this.panel1.Controls.Add(this.txt_fname);
+            this.panel1.Controls.Add(this.txt_donor_id);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label6);
@@ -82,6 +82,7 @@ namespace OHMS
             this.button3.TabIndex = 38;
             this.button3.Text = "Save";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
@@ -95,57 +96,6 @@ namespace OHMS
             this.button2.Text = "Close";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // textBoxBorder6
-            // 
-            this.textBoxBorder6.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxBorder6.Location = new System.Drawing.Point(501, 124);
-            this.textBoxBorder6.Name = "textBoxBorder6";
-            this.textBoxBorder6.Size = new System.Drawing.Size(182, 20);
-            this.textBoxBorder6.TabIndex = 32;
-            this.textBoxBorder6.TextChanged += new System.EventHandler(this.textBoxBorder6_TextChanged);
-            // 
-            // textBoxBorder5
-            // 
-            this.textBoxBorder5.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxBorder5.Location = new System.Drawing.Point(178, 124);
-            this.textBoxBorder5.Name = "textBoxBorder5";
-            this.textBoxBorder5.Size = new System.Drawing.Size(173, 20);
-            this.textBoxBorder5.TabIndex = 33;
-            this.textBoxBorder5.TextChanged += new System.EventHandler(this.textBoxBorder5_TextChanged);
-            // 
-            // textBoxBorder4
-            // 
-            this.textBoxBorder4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxBorder4.Location = new System.Drawing.Point(501, 90);
-            this.textBoxBorder4.Name = "textBoxBorder4";
-            this.textBoxBorder4.Size = new System.Drawing.Size(182, 20);
-            this.textBoxBorder4.TabIndex = 34;
-            // 
-            // textBoxBorder3
-            // 
-            this.textBoxBorder3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxBorder3.Location = new System.Drawing.Point(503, 56);
-            this.textBoxBorder3.Name = "textBoxBorder3";
-            this.textBoxBorder3.Size = new System.Drawing.Size(180, 20);
-            this.textBoxBorder3.TabIndex = 35;
-            // 
-            // textBoxBorder2
-            // 
-            this.textBoxBorder2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxBorder2.Location = new System.Drawing.Point(178, 86);
-            this.textBoxBorder2.Name = "textBoxBorder2";
-            this.textBoxBorder2.Size = new System.Drawing.Size(173, 20);
-            this.textBoxBorder2.TabIndex = 36;
-            this.textBoxBorder2.TextChanged += new System.EventHandler(this.textBoxBorder2_TextChanged);
-            // 
-            // textBoxBorder1
-            // 
-            this.textBoxBorder1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxBorder1.Location = new System.Drawing.Point(178, 57);
-            this.textBoxBorder1.Name = "textBoxBorder1";
-            this.textBoxBorder1.Size = new System.Drawing.Size(173, 20);
-            this.textBoxBorder1.TabIndex = 37;
             // 
             // label3
             // 
@@ -191,7 +141,7 @@ namespace OHMS
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(383, 61);
+            this.label1.Location = new System.Drawing.Point(387, 90);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(82, 16);
             this.label1.TabIndex = 28;
@@ -201,11 +151,63 @@ namespace OHMS
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(387, 94);
+            this.label13.Location = new System.Drawing.Point(387, 53);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(57, 16);
             this.label13.TabIndex = 31;
             this.label13.Text = "NIC No";
+            // 
+            // txt_email
+            // 
+            this.txt_email.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_email.Location = new System.Drawing.Point(501, 124);
+            this.txt_email.Name = "txt_email";
+            this.txt_email.Size = new System.Drawing.Size(182, 20);
+            this.txt_email.TabIndex = 32;
+            this.txt_email.TextChanged += new System.EventHandler(this.textBoxBorder6_TextChanged);
+            // 
+            // txt_contact
+            // 
+            this.txt_contact.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_contact.Location = new System.Drawing.Point(178, 124);
+            this.txt_contact.Name = "txt_contact";
+            this.txt_contact.Size = new System.Drawing.Size(173, 20);
+            this.txt_contact.TabIndex = 33;
+            this.txt_contact.TextChanged += new System.EventHandler(this.textBoxBorder5_TextChanged);
+            // 
+            // txt_nic
+            // 
+            this.txt_nic.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_nic.Location = new System.Drawing.Point(501, 49);
+            this.txt_nic.Name = "txt_nic";
+            this.txt_nic.Size = new System.Drawing.Size(182, 20);
+            this.txt_nic.TabIndex = 34;
+            // 
+            // txt_lname
+            // 
+            this.txt_lname.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_lname.Location = new System.Drawing.Point(507, 85);
+            this.txt_lname.Name = "txt_lname";
+            this.txt_lname.Size = new System.Drawing.Size(180, 20);
+            this.txt_lname.TabIndex = 35;
+            // 
+            // txt_fname
+            // 
+            this.txt_fname.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_fname.Location = new System.Drawing.Point(178, 86);
+            this.txt_fname.Name = "txt_fname";
+            this.txt_fname.Size = new System.Drawing.Size(173, 20);
+            this.txt_fname.TabIndex = 36;
+            this.txt_fname.TextChanged += new System.EventHandler(this.textBoxBorder2_TextChanged);
+            // 
+            // txt_donor_id
+            // 
+            this.txt_donor_id.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_donor_id.Location = new System.Drawing.Point(178, 57);
+            this.txt_donor_id.Name = "txt_donor_id";
+            this.txt_donor_id.ReadOnly = true;
+            this.txt_donor_id.Size = new System.Drawing.Size(173, 20);
+            this.txt_donor_id.TabIndex = 37;
             // 
             // donor_form
             // 
@@ -230,12 +232,12 @@ namespace OHMS
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private user_control.TextBoxBorder textBoxBorder6;
-        private user_control.TextBoxBorder textBoxBorder5;
-        private user_control.TextBoxBorder textBoxBorder4;
-        private user_control.TextBoxBorder textBoxBorder3;
-        private user_control.TextBoxBorder textBoxBorder2;
-        private user_control.TextBoxBorder textBoxBorder1;
+        private user_control.TextBoxBorder txt_email;
+        private user_control.TextBoxBorder txt_contact;
+        private user_control.TextBoxBorder txt_nic;
+        private user_control.TextBoxBorder txt_lname;
+        private user_control.TextBoxBorder txt_fname;
+        private user_control.TextBoxBorder txt_donor_id;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label6;

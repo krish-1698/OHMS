@@ -119,6 +119,13 @@
     <Compile Include="adoption_form.Designer.cs">
       <DependentUpon>adoption_form.cs</DependentUpon>
     </Compile>
+    <Compile Include="Auto_increment.cs" />
+    <Compile Include="changePass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="changePass.Designer.cs">
+      <DependentUpon>changePass.cs</DependentUpon>
+    </Compile>
     <Compile Include="dbConnection.cs" />
     <Compile Include="donor_form.cs">
       <SubType>Form</SubType>
@@ -205,6 +212,12 @@
     <Compile Include="Staff\Staff_Dashboard.Designer.cs">
       <DependentUpon>Staff_Dashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="staff_attendance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="staff_attendance.Designer.cs">
+      <DependentUpon>staff_attendance.cs</DependentUpon>
+    </Compile>
     <Compile Include="user_control\adoption_control.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -283,6 +296,7 @@
     <Compile Include="user_control\visitorActivity_control.Designer.cs">
       <DependentUpon>visitorActivity_control.cs</DependentUpon>
     </Compile>
+    <Compile Include="validation.cs" />
     <Compile Include="visitorActivity_form.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -291,6 +305,9 @@
     </Compile>
     <EmbeddedResource Include="adoption_form.resx">
       <DependentUpon>adoption_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="changePass.resx">
+      <DependentUpon>changePass.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="donor_form.resx">
       <DependentUpon>donor_form.cs</DependentUpon>
@@ -335,6 +352,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Staff\Staff_Dashboard.resx">
       <DependentUpon>Staff_Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="staff_attendance.resx">
+      <DependentUpon>staff_attendance.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="user_control\adoption_control.resx">
       <DependentUpon>adoption_control.cs</DependentUpon>
@@ -421,6 +441,8 @@
     <None Include="Resources\icons8-find-and-replace-24.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\man-icon.png" />
+    <None Include="Resources\icons8-search.gif" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

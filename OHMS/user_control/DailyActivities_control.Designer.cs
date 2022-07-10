@@ -44,7 +44,7 @@ namespace OHMS.user_control
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(119)))), ((int)(((byte)(242)))));
-            this.label1.Location = new System.Drawing.Point(356, 54);
+            this.label1.Location = new System.Drawing.Point(451, 69);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(215, 31);
             this.label1.TabIndex = 0;
@@ -64,6 +64,7 @@ namespace OHMS.user_control
             this.button1.Text = "Orphans";
             this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -79,11 +80,12 @@ namespace OHMS.user_control
             this.button2.Text = "Visitors";
             this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // panel1
             // 
             this.panel1.Controls.Add(this.button1);
-            this.panel1.Location = new System.Drawing.Point(156, 169);
+            this.panel1.Location = new System.Drawing.Point(251, 184);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(288, 143);
             this.panel1.TabIndex = 2;
@@ -91,7 +93,7 @@ namespace OHMS.user_control
             // panel2
             // 
             this.panel2.Controls.Add(this.button2);
-            this.panel2.Location = new System.Drawing.Point(538, 160);
+            this.panel2.Location = new System.Drawing.Point(633, 175);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(271, 152);
             this.panel2.TabIndex = 3;
@@ -104,7 +106,7 @@ namespace OHMS.user_control
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
             this.Name = "DailyActivities_control";
-            this.Size = new System.Drawing.Size(908, 508);
+            this.Size = new System.Drawing.Size(1183, 696);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);

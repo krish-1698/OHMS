@@ -12,12 +12,13 @@ namespace OHMS
 {
     public partial class Admin_Dashboard : Form
     {
-
+        string username="";
         int panelWidth;
         bool col;
         dbConnection dbo = new dbConnection();
-        public Admin_Dashboard()
+        public Admin_Dashboard(string uname)
         {
+            username = uname;
             InitializeComponent();
             panelWidth = pnl_left.Width;
             col = false;
@@ -27,7 +28,18 @@ namespace OHMS
 
 
         }
+        public Admin_Dashboard()
+        {
+            //username = uname;
+            InitializeComponent();
+            panelWidth = pnl_left.Width;
+            col = false;
+            timer2.Start();
+            SidePanel.Height = button1.Height;
+            SidePanel.Top = button1.Top;
 
+
+        }
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
             ControlPaint.DrawBorder(e.Graphics, this.panel1.ClientRectangle, Color.FromArgb(53, 53, 255), ButtonBorderStyle.Solid);
@@ -49,13 +61,20 @@ namespace OHMS
             panelControls.Controls.Add(home);
             home.Dock = DockStyle.Fill;
             home.BringToFront();
+            button10.Text = username;
+          
+        }
+        public void addcontrols1()
+        {
+
+            button3.PerformClick();
+            button3.PerformClick();
 
         }
 
-
         private void addcontrols(UserControl uc)
         {
-
+            panelControls.Controls.Clear();
             panelControls.Controls.Clear();
             panelControls.Controls.Add(uc);
             uc.Dock=DockStyle.Fill;
@@ -158,6 +177,8 @@ namespace OHMS
         {
             DateTime dt = DateTime.Now;
             lbltime.Text = dt.ToString("hh:mm:ss tt");
+           // dt.ToString("hh:mm tt")
+           //dt.ToString("D")
         }
 
         private void lbldate_Click(object sender, EventArgs e)
@@ -172,6 +193,8 @@ namespace OHMS
 
         private void button11_Click(object sender, EventArgs e)
         {
+            user_control.visitors donation1 = new user_control.visitors();
+            addcontrols(donation1);
             //dbo.ExecuteQueries("insert into expense(expense_id,amount,date_paid,purpose)Values('" + textBox1.Text + "','" + textBoxBorder3.Text + "','" + dateTimePicker1.Text + "','" + textBoxBorder1.Text + "') ");
         }
 
@@ -226,7 +249,7 @@ namespace OHMS
 
         private void button9_Click(object sender, EventArgs e)
         {
-           DialogResult result= MessageBox.Show("Are you sure you want to Log Out ?", "Message", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+           DialogResult result= MessageBox.Show("Are you sure you want to Log Out ?", "Message", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (result == DialogResult.Yes)
             {
                 login l1 = new login();
@@ -234,8 +257,34 @@ namespace OHMS
                 this.Close();
             }
         }
-
+        
         private void button10_Click(object sender, EventArgs e)
+        {
+            Form formbg = new Form();
+            using (changePass p1 = new changePass(username))
+            {
+                formbg.FormBorderStyle = FormBorderStyle.None;
+                formbg.Opacity = .50d;
+                formbg.BackColor = Color.Black;
+                formbg.Size = new Size(1386, 748);
+                formbg.StartPosition = FormStartPosition.CenterScreen;
+                //formbg.WindowState = FormWindowState.Normal;
+                //formbg.TopMost = true;
+                //formbg.Location = this.Location;
+                // formbg.ShowInTaskbar = false;
+                formbg.Show();
+                p1.Owner = formbg;
+                p1.ShowDialog();
+                formbg.Dispose();
+                // this.Hide();
+                // f1.ShowDialog();
+
+            }
+            
+        
+        }
+
+        private void panelControls_Paint_1(object sender, PaintEventArgs e)
         {
 
         }

@@ -16,5 +16,10 @@ namespace OHMS.user_control
         {
             InitializeComponent();
         }
+
+        private void btn_add_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

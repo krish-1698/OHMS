@@ -16,5 +16,15 @@ namespace OHMS
         {
             InitializeComponent();
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void txt_nic_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

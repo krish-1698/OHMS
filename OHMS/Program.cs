@@ -16,8 +16,9 @@ namespace OHMS
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-           // Application.Run(new Admin_Dashboard());
+          // Application.Run(new Admin_Dashboard());
             Application.Run(new login());
+            //Application.Run(new user_control.visitors());
             //Application.Run(new income_report());
             //Application.Run(new Add_Expense());
         }

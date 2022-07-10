@@ -11162,16 +11162,13 @@
   <metadata name="customInstaller1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
-  <data name="button2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="button2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAABGdBTUEAALGPC/xhBQAAAXRJREFUaEPt
-        mcFqwzAQRPOJPbT00H59+xkttBrIQDBOK61Gq12yDwZycDJ+KJJsdCmKoiiKIhVPLZ/X4LM3rv0vLV8t
-        P9d8t7y3eOHafyxzKb3Btf9eGbNa2rUf8+SvMgbXvLaowW/29kvmNBaHs4KzqKV7ZRnc6zQjwohKelQW
-        +WiZpvcvfZtZaYssrpdtU88tozdgXUj+W6DOgq63Fike0mFkyUrpcLJkhXRYWaKUDi9LFNJpZMmMdDpZ
-        Yt0zLd9RPNBIsIz0SEKM7JFV0iFliVo6tCxRSaeQJbPSqWSJVTqlLLDsswiEe569Q2GVZVJJz8oyKaRV
-        skxoabUsE1J6lSwTSvqhXh4sI4vRwj5r2ae3jvSMLEkjrZAl4aWVsiSs9ApZEk56pSwJI+0hS7ZLP9xh
-        WqbjUvfzYZUsGZV2PR9Wy5JeaVzjdj5sXaB62dJ/r3S1LNnSfyz1kiVb+jFPsJBhgZDNmQF29xdFURRF
-        YeJy+QX+krx20s9ccwAAAABJRU5ErkJggg==
+        iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABGdBTUEAALGPC/xhBQAAAMdJREFUSEvt
+        ltEKwjAMRfsTyvz/z9EnfdjnaC40MMKa3qyRIu7AhaENp8mqWzn5W66SRw2uo2j9vV5TXCRPybtmldwk
+        LIfrsVMt0rwkzM6xBmttPTrvsidGevKWFKHEdlTbtMbWq1kkFBF5mlRh5OlSxbtv+Nz7jjmMLl5Xexnq
+        1MLKU6VKT/4VKWDEkX84isio0+RHDtewfMrPyetUD1JvTbhzRqqkySNSJUU+7bE47UXAjq013hZD9dg5
+        dokwnVpG609+nlI+RnPvY/SuGfcAAAAASUVORK5CYII=
 </value>
   </data>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">

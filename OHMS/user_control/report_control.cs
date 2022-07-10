@@ -19,9 +19,23 @@ namespace OHMS.user_control
 
         private void button1_Click(object sender, EventArgs e)
         {
+            Form formbg = new Form();
             using (income_report f1 = new income_report())
             {
+                formbg.FormBorderStyle = FormBorderStyle.None;
+                formbg.Opacity = .50d;
+                formbg.BackColor = Color.Black;
+                formbg.Size = new Size(1386, 748);
+                formbg.StartPosition = FormStartPosition.CenterScreen;
+                //formbg.WindowState = FormWindowState.Normal;
+                //formbg.TopMost = true;
+                //formbg.Location = this.Location;
+                // formbg.ShowInTaskbar = false;
+                formbg.Show();
+                f1.Owner = formbg;
                 f1.ShowDialog();
+                formbg.Dispose();
+               //f1.ShowDialog();
 
             }
         }

@@ -34,8 +34,8 @@ namespace OHMS
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.btn_search = new System.Windows.Forms.Button();
+            this.txt_Search = new System.Windows.Forms.TextBox();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -66,9 +66,9 @@ namespace OHMS
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.btn_search);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.textBox2);
+            this.panel1.Controls.Add(this.txt_Search);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(8, 8);
             this.panel1.Name = "panel1";
@@ -86,25 +86,25 @@ namespace OHMS
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button1
+            // btn_search
             // 
-            this.button1.BackgroundImage = global::OHMS.Properties.Resources.icons8_find_and_replace_24;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button1.Location = new System.Drawing.Point(344, 66);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(30, 31);
-            this.button1.TabIndex = 6;
-            this.toolTip1.SetToolTip(this.button1, "search by");
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btn_search.BackgroundImage = global::OHMS.Properties.Resources.icons8_find_and_replace_24;
+            this.btn_search.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn_search.Location = new System.Drawing.Point(344, 66);
+            this.btn_search.Name = "btn_search";
+            this.btn_search.Size = new System.Drawing.Size(30, 31);
+            this.btn_search.TabIndex = 6;
+            this.toolTip1.SetToolTip(this.btn_search, "search by");
+            this.btn_search.UseVisualStyleBackColor = true;
+            this.btn_search.Click += new System.EventHandler(this.button1_Click);
             // 
-            // textBox2
+            // txt_Search
             // 
-            this.textBox2.Location = new System.Drawing.Point(166, 71);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(160, 20);
-            this.textBox2.TabIndex = 5;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.txt_Search.Location = new System.Drawing.Point(166, 71);
+            this.txt_Search.Name = "txt_Search";
+            this.txt_Search.Size = new System.Drawing.Size(160, 20);
+            this.txt_Search.TabIndex = 5;
+            this.txt_Search.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // CheckDonorForm
             // 
@@ -127,12 +127,12 @@ namespace OHMS
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_search;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txt_Search;
         private System.Windows.Forms.ToolTip toolTip1;
     }
 }

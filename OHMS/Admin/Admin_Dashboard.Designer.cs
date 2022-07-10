@@ -37,7 +37,6 @@ namespace OHMS
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.lbldate = new System.Windows.Forms.Label();
             this.lbltime = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.SidePanel = new System.Windows.Forms.Panel();
             this.button7 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
@@ -53,6 +52,7 @@ namespace OHMS
             this.button9 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
             this.panelControls = new System.Windows.Forms.Panel();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.pnl_left.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -65,7 +65,6 @@ namespace OHMS
             this.pnl_left.Controls.Add(this.panel1);
             this.pnl_left.Controls.Add(this.lbldate);
             this.pnl_left.Controls.Add(this.lbltime);
-            this.pnl_left.Controls.Add(this.label5);
             this.pnl_left.Controls.Add(this.SidePanel);
             this.pnl_left.Controls.Add(this.button7);
             this.pnl_left.Controls.Add(this.button11);
@@ -147,18 +146,6 @@ namespace OHMS
             this.lbltime.Text = "HH:MM:SS";
             this.lbltime.Click += new System.EventHandler(this.label2_Click);
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(358, 42);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(49, 16);
-            this.label5.TabIndex = 0;
-            this.label5.Text = "Hello ";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
-            // 
             // SidePanel
             // 
             this.SidePanel.BackColor = System.Drawing.Color.White;
@@ -200,6 +187,7 @@ namespace OHMS
             this.button11.Text = "        System  \r\n         Changes";
             this.button11.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button11.UseVisualStyleBackColor = true;
+            this.button11.Visible = false;
             this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
             // button5
@@ -337,6 +325,7 @@ namespace OHMS
             this.button9.Size = new System.Drawing.Size(42, 33);
             this.button9.TabIndex = 11;
             this.button9.Text = "      ";
+            this.toolTip1.SetToolTip(this.button9, "Log Out");
             this.button9.UseVisualStyleBackColor = true;
             this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
@@ -344,15 +333,15 @@ namespace OHMS
             // 
             this.button10.FlatAppearance.BorderSize = 0;
             this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button10.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button10.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button10.ForeColor = System.Drawing.Color.White;
             this.button10.Image = ((System.Drawing.Image)(resources.GetObject("button10.Image")));
             this.button10.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button10.Location = new System.Drawing.Point(980, 9);
+            this.button10.Location = new System.Drawing.Point(885, 9);
             this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(124, 36);
+            this.button10.Size = new System.Drawing.Size(219, 36);
             this.button10.TabIndex = 10;
-            this.button10.Text = "       Admin";
+            this.button10.Text = "        Admin";
             this.button10.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button10.UseVisualStyleBackColor = true;
             this.button10.Click += new System.EventHandler(this.button10_Click);
@@ -365,6 +354,7 @@ namespace OHMS
             this.panelControls.Name = "panelControls";
             this.panelControls.Size = new System.Drawing.Size(1183, 696);
             this.panelControls.TabIndex = 4;
+            this.panelControls.Paint += new System.Windows.Forms.PaintEventHandler(this.panelControls_Paint_1);
             // 
             // Admin_Dashboard
             // 
@@ -398,7 +388,6 @@ namespace OHMS
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label lbldate;
@@ -412,6 +401,7 @@ namespace OHMS
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }
 

@@ -31,13 +31,13 @@ namespace OHMS.user_control
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(home_control));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.panel7 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -48,13 +48,13 @@ namespace OHMS.user_control
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
+            this.panel7.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            this.panel7.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel2.SuspendLayout();
@@ -73,6 +73,15 @@ namespace OHMS.user_control
             this.panel1.Size = new System.Drawing.Size(1167, 680);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(100)))), ((int)(((byte)(168)))));
+            this.panel7.Controls.Add(this.panel6);
+            this.panel7.Location = new System.Drawing.Point(90, 21);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(970, 171);
+            this.panel7.TabIndex = 18;
             // 
             // panel6
             // 
@@ -134,22 +143,13 @@ namespace OHMS.user_control
             this.pictureBox5.TabIndex = 15;
             this.pictureBox5.TabStop = false;
             // 
-            // panel7
-            // 
-            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(100)))), ((int)(((byte)(168)))));
-            this.panel7.Controls.Add(this.panel6);
-            this.panel7.Location = new System.Drawing.Point(90, 21);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(970, 171);
-            this.panel7.TabIndex = 18;
-            // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.LightSteelBlue;
             this.panel3.Controls.Add(this.pictureBox2);
             this.panel3.Controls.Add(this.label5);
             this.panel3.Controls.Add(this.label2);
-            this.panel3.Location = new System.Drawing.Point(699, 341);
+            this.panel3.Location = new System.Drawing.Point(629, 341);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(335, 183);
             this.panel3.TabIndex = 0;
@@ -192,7 +192,7 @@ namespace OHMS.user_control
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Location = new System.Drawing.Point(259, 341);
+            this.panel2.Location = new System.Drawing.Point(189, 341);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(335, 183);
             this.panel2.TabIndex = 0;
@@ -249,13 +249,13 @@ namespace OHMS.user_control
             this.Size = new System.Drawing.Size(1183, 696);
             this.Load += new System.EventHandler(this.home_control_Load);
             this.panel1.ResumeLayout(false);
+            this.panel7.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            this.panel7.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
